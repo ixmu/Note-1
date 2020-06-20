@@ -17,6 +17,8 @@ else
 fi
 
 if [ "$deb_ver" == "9" ]; then
+  #安装完成bbr就自动重启了，下面还没完成嗯？
+  #来自自然的发现
   bash <(wget --no-check-certificate -qO- 'https://raw.githubusercontent.com/MoeClub/apt/master/bbr/bbr.sh') 0
 fi
 
